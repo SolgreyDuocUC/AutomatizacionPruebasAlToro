@@ -10,9 +10,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features")
-@ConfigurationParameter(key=GLUE_PROPERTY_NAME, value="com.douc.steps")
-@ConfigurationParameter(key=PLUGIN_PROPERTY_NAME, value="pretty,summary,html:target/cucumber-report.html")
+@SelectClasspathResource("feautures") // usa el nombre real de tu carpeta
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.duoc.steps")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, summary, html:target/cucumber-report.html")
 public class RunCucumberTest {
-
 }
+
