@@ -18,52 +18,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TranferirFondosSteps {
 
-    static WebDriver driver;
 
-    @Before
-    public void setUp(){
-
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-
-        options.addArguments("--incognito");
-        options.addArguments("--disable-save-password-bubble");
-        options.addArguments("--disable-popup-blocking");
-        options.addArguments("--no-default-browser-check");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--userdata-dir=/tmp/chrome-test-profile");
-
-        driver= new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-
-    }
-
-    @After
-    public void tearDown(){
-        if(driver!= null){
-            driver.quit();
-        }
-
-    }
-
-    @Given("el navegador está abierto")
-    public void abrirNavegador() {
-        driver.get("http://testfire.net/index.jsp");// URL base de la aplicación
-    }
-
-    @Given("el usuario está logeado")
-    public void loginUsuario() {
-        // Localizadores según la página testfire.net
-        driver.findElement(By.id("uid")).sendKeys("Admin");         // campo usuario
-        driver.findElement(By.id("passw")).sendKeys("Admin");       // campo contraseña
-        driver.findElement(By.name("btnSubmit")).click();           // botón login
-
-        // Se puede agregar espera o validación que confirmé login exitoso
-        String welcomeText = driver.findElement(By.id("LoginLink")).getText();
-        assertTrue(welcomeText.contains("Admin") || !welcomeText.contains("Login"));
-    }
+    // Usar driver de CommonSteps
+    private WebDriver driver = CommonSteps.driver;
 
     @When("el usuario oprime el botón Transfer Funds")
     public void oprimirTransferFunds() {
@@ -73,23 +30,23 @@ public class TranferirFondosSteps {
     @When("el usuario selecciona la cuenta desde la cual transferir")
     public void seleccionarCuentaDesde() {
         Select fromAccount = new Select(driver.findElement(By.xpath("//*[@id='fromAccount']")));
-        fromAccount.selectByIndex(1); // Ejemplo, seleccionar la segunda cuenta
+        fromAccount.selectByIndex(1);
     }
 
     @When("el usuario selecciona la cuenta destino")
     public void seleccionarCuentaDestino() {
         Select toAccount = new Select(driver.findElement(By.xpath("//*[@id='toAccount']")));
-        toAccount.selectByIndex(2); // Ejemplo, seleccionar la tercera cuenta
+        toAccount.selectByIndex(2);
     }
 
     @When("el usuario ingresa el monto a transferir")
     public void ingresarMontoValido() {
-        driver.findElement(By.xpath("//*[@id='transferAmount']")).sendKeys("100"); // monto válido
+        driver.findElement(By.xpath("//*[@id='transferAmount']")).sendKeys("100");
     }
 
     @When("el usuario ingresa un monto inválido a transferir")
     public void ingresarMontoInvalido() {
-        driver.findElement(By.xpath("//*[@id='transferAmount']")).sendKeys("1000000"); // monto inválido (ejemplo)
+        driver.findElement(By.xpath("//*[@id='transferAmount']")).sendKeys("1000000");
     }
 
     @When("el usuario confirma la transacción")
@@ -108,6 +65,5 @@ public class TranferirFondosSteps {
         String mensajeError = driver.findElement(By.xpath("//div[contains(text(),'monto inválido')]")).getText();
         assertTrue(mensajeError.contains("monto inválido"));
     }
-
 
 }
