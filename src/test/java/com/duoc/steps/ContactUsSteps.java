@@ -22,35 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ContactUsSteps {
 
-    static WebDriver driver;
-
-    @Before
-    public void setUp(){
-
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-
-        options.addArguments("--incognito");
-        options.addArguments("--disable-save-password-bubble");
-        options.addArguments("--disable-popup-blocking");
-        options.addArguments("--no-default-browser-check");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--userdata-dir=/tmp/chrome-test-profile");
-
-        driver= new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-
-    }
-
-    @After
-    public void tearDown(){
-        if(driver!= null){
-            driver.quit();
-        }
-
-    }
+    private WebDriver driver = CommonSteps.driver;
 
     @When("el usuario accede a la opción Contact Us")
     public void accederContactUs() {
