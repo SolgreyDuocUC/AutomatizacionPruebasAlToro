@@ -1,5 +1,6 @@
 package com.duoc.steps;
 
+import com.duoc.Utilidades.ExcelUtils;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -14,13 +15,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import static com.duoc.steps.CommonsDriverSteps.driver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class BuscadorSteps {
 
-    private WebDriver driver = CommonSteps.driver;
 
 
     @Given("el usuario oprime el panel de Search")

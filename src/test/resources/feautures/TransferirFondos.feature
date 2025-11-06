@@ -1,21 +1,19 @@
-Feature: Transferir fondos entre cuentas
+Feature: Validar transferencia entre mis cuentas
+  Yo como usuario necesito hacer transferencias entre mis cuentas
 
-  Background:
-    Given el navegador está abierto
-    And el usuario está logeado
+  Scenario Outline: Transferencia entre mis cuentas
+    Given que puedo acceder a la url "https://demo.testfire.net/"
+    And puedo ingresar a mi aplicacion con mi usuario y mi password <FilaExcel>
+    When da click en el enlace de transferencia de fondos "Transfer Funds"
+    And selecciono la cuenta de origen y destino <FilaExcel>
+    And coloco el monto a transferir <FilaExcel>
+    And da click en el boton de transferencia "//input[@id='transfer']"
+    Then muestra mensaje de transferencia correcta <FilaExcel>
 
-  Scenario: Transferir fondos correctamente
-    When el usuario oprime el botón Transfer Funds
-    And el usuario selecciona la cuenta desde la cual transferir
-    And el usuario selecciona la cuenta destino
-    And el usuario ingresa el monto a transferir
-    And el usuario confirma la transacción
-    Then deberia mostrarse una confirmación de transferencia exitosa
-
-  Scenario: Intentar transferir monto inválido
-    When el usuario oprime el botón Transfer Funds
-    And el usuario selecciona la cuenta desde la cual transferir
-    And el usuario selecciona la cuenta destino
-    And el usuario ingresa un monto inválido a transferir
-    And el usuario confirma la transacción
-    Then deberia mostrarse un mensaje de error indicando monto inválido
+    Examples:
+      | FilaExcel |
+      | 1         |
+      | 2         |
+      | 5         |
+ 
+ 

@@ -1,6 +1,9 @@
 package com.duoc.steps;
 
 
+import com.duoc.Utilidades.ExcelUtils;
+import com.duoc.Utilidades.ScreensUtils;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -9,57 +12,81 @@ import io.cucumber.java.en.And;
 
 import org.openqa.selenium.WebElement;
 
-import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import static com.duoc.steps.CommonsDriverSteps.driver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ContactUsSteps {
 
-    private WebDriver driver = CommonSteps.driver;
 
-    @When("el usuario accede a la opción Contact Us")
-    public void accederContactUs() {
-        driver.findElement(By.xpath("//*[@id='HyperLink3']")).click();
+
+
+
+    @When("Oprime la opción Contact Us")
+    public void Oprime_opcion_contact_us(String linkTransfer) throws Exception{
+        WebDriverWait wait = new WebDriverWait(driver, 60);
+        WebElement mensaje = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/form/table/tbody/tr[1]/td[2]/a[2]")));
+        if (mensaje.isDisplayed())
+            driver.findElement(By.linkText(linkTransfer)).click();
+        else
+            System.err.println("Error al ingresar en la cuenta...");
+        String obj = "oprime_opcion_contactUsa";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
+
+
     }
 
-    @When("el usuario abre el formulario de contacto")
-    public void abrirFormularioContacto() {
-        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div[1]/p[2]/a")).click();
+    @When("Oprime link de formulario")
+    public void oprime_link_formulario(String linkTransfer) throws Exception{
+        WebDriverWait wait = new WebDriverWait(driver, 60);
+        WebElement mensaje = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div[1]/p[2]/a")));
+        if (mensaje.isDisplayed())
+            driver.findElement(By.linkText(linkTransfer));
+        else
+            System.err.println("Error al ingresar al formulario");
+        String obj = "oprime_enlace_para_formulario";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
+
     }
 
-    @When("el usuario ingresa el nombre {string}")
-    public void ingresarNombre(String nombre) {
-        WebElement nombreInput = driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[2]/td[2]/input"));
-        nombreInput.clear();
-        nombreInput.sendKeys(nombre);
+    @When("ingresa el nombre {string}")
+    public void ingresarNombre(String fila) throws Exception{
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[2]/td[2]/input")).sendKeys(ExcelUtils.getCellData(Integer.parseInt(fila), 2).toString());
+        String obj = "Ingresa_nombre_al_formulario";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
     }
 
-    @When("el usuario ingresa el email {string}")
-    public void ingresarEmail(String email) {
-        WebElement emailInput = driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[3]/td[2]/input"));
-        emailInput.clear();
-        emailInput.sendKeys(email);
+    @When("ingresa el email address{string}")
+    public void ingresa_email_address(String fila) throws Exception {
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[3]/td[2]/input")).sendKeys(ExcelUtils.getCellData(Integer.parseInt(fila), 2).toString());
+        String obj = "Ingresa_email_al_formulario";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
     }
 
-    @When("el usuario ingresa el propósito {string}")
-    public void ingresarProposito(String proposito) {
-        WebElement propositoInput = driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[4]/td[2]/input"));
-        propositoInput.clear();
-        propositoInput.sendKeys(proposito);
+    @When("ingresa el asunto {string}")
+    public void ingresa_asunto(String fila) throws Exception{
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[4]/td[2]/input")).sendKeys(ExcelUtils.getCellData(Integer.parseInt(fila), 2).toString());
+        String obj = "Ingresa_el_asunto_al_formulario";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
     }
 
-    @When("el usuario ingresa los comentarios {string}")
-    public void ingresarComentarios(String comentarios) {
-        WebElement comentariosInput = driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[5]/td[2]/textarea"));
-        comentariosInput.clear();
-        comentariosInput.sendKeys(comentarios);
+    @When("ingresa los comentarios o preguntas {string}")
+    public void ingresar_los_comentarios_preguntas(String fila) throws Exception{
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[5]/td[2]/textarea")).sendKeys(ExcelUtils.getCellData(Integer.parseInt(fila), 2).toString());
+        String obj = "Ingresa_comentarios_o_preguntas_al_formulario";
+        ScreensUtils.captureScreenShot(driver, "Evidencia_ContactUs\\"+obj+" "+ScreensUtils.GetTimeStampValue()+".png");
     }
 
     @When("el usuario envía el formulario de contacto")
