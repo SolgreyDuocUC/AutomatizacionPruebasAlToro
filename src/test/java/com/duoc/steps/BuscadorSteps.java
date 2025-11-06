@@ -22,10 +22,6 @@ public class BuscadorSteps {
 
     private WebDriver driver = CommonSteps.driver;
 
-    @Given("el navegador está abierto")
-    public void abrirNavegador() {
-        // Código para abrir navegador con WebDriverManager
-    }
 
     @Given("el usuario oprime el panel de Search")
     public void oprimirPanelBusqueda() {
