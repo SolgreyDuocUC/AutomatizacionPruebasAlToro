@@ -1,3 +1,4 @@
+@Transferencias
 Feature: Validar transferencia entre mis cuentas
   Yo como usuario necesito hacer transferencias entre mis cuentas
 

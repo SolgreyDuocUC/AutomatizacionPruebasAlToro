@@ -1,25 +1,18 @@
 package com.duoc.steps;
 import com.duoc.Utilidades.ExcelUtils;
 import com.duoc.Utilidades.ScreensUtils;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import static com.duoc.steps.CommonsDriverSteps.driver;
 
