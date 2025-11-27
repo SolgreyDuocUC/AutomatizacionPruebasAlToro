@@ -1,4 +1,4 @@
-package utilities;
+package loginCuentaUsuario.utilities;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.duoc.Utilidades;
+package TransferenciaContactoBusqueda.Utilidades;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -36,6 +36,4 @@ public class ScreensUtils {
         return systime;
 
     }
-
-
 }
