@@ -1,156 +1,150 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>EscenarioFondos</groupId>
-    <artifactId>TransferFondos</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <java.version>1.8</java.version>
-        <cucumber.version>6.10.0</cucumber.version>
-        <maven.test.failure.ignore>true</maven.test.failure.ignore>
-    </properties>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>EscenarioFondos</groupId>
+  <artifactId>TransferFondos</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+   <properties>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
+   <java.version>1.8</java.version>
+   <cucumber.version>6.10.0</cucumber.version>
+   <maven.test.failure.ignore>true</maven.test.failure.ignore> 
+   </properties>
+    
+    
+  <dependencies>
+   
+   <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.0.1</version>
+   </dependency>
 
+   <dependency>
+     <groupId>org.apache.poi</groupId>
+     <artifactId>poi-ooxml</artifactId>
+     <version>4.0.1</version>
+    </dependency>
+  
+    <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.15.1</version>
+   </dependency>
 
-    <dependencies>
+   <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.1</version>
+    <scope>test</scope>
+   </dependency>
 
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>4.0.1</version>
-        </dependency>
+   <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+   </dependency>
+      <dependency>
+          <groupId>io.github.bonigarcia</groupId>
+          <artifactId>webdrivermanager</artifactId>
+          <version>5.8.0</version>
+          <scope>test</scope>
+      </dependency>
+   <dependency>
+    <groupId>io.cucumber</groupId>
+    
+    <artifactId>cucumber-java</artifactId>
+    <version>${cucumber.version}</version>
+   </dependency>
+   
+   <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>${cucumber.version}</version>
+    <scope>test</scope>
+   </dependency>
+   
+   <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>${cucumber.version}</version>
+  </dependency>
+    
+   <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>${cucumber.version}</version>
+    <scope>test</scope>
+   </dependency>
+   
+    <dependency>
+     <groupId>org.apache.maven</groupId>
+     <artifactId>maven-plugin-api</artifactId>
+     <version>3.8.3</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+   
+  </dependencies>
+  
+   <build>
+    <plugins>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<version>3.3</version>
+	<configuration>
+	 <source>1.8</source>
+	 <target>1.8</target>
+	</configuration>
+       </plugin>
 
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>4.0.1</version>
-        </dependency>
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-surefire-plugin</artifactId>
+       <version>2.19.1</version>   
+       <configuration>
+        <testFailureIgnore>true</testFailureIgnore>
+       </configuration>
+      </plugin> 
+      
+      <plugin>
+        <groupId>net.masterthought</groupId>
+        <artifactId>maven-cucumber-reporting</artifactId>
+        <version>3.20.0</version>
+        <executions>
+          <execution>
+            <id>execution</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <projectName>TransferFondos</projectName>
+              <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+              <inputDirectory>${project.build.directory}</inputDirectory>
+              <jsonFiles>
+               <param>**/*.json</param>
+               </jsonFiles>
+                <classificationDirectory>${project.build.directory}/</classificationDirectory>
+                <classificationFiles>
+                  <param>sample.properties</param>
+                  <param>other.properties</param>
+                </classificationFiles>
+                <parallelTesting>false</parallelTesting>
+                <checkBuildResult>true</checkBuildResult>
+                
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.15.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.8.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-core</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-plugin-api</artifactId>
-            <version>3.8.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>3.20.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>TransferFondos</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-                            <inputDirectory>${project.build.directory}</inputDirectory>
-                            <jsonFiles>
-                                <param>**/*.json</param>
-                            </jsonFiles>
-                            <classificationDirectory>${project.build.directory}/</classificationDirectory>
-                            <classificationFiles>
-                                <param>sample.properties</param>
-                                <param>other.properties</param>
-                            </classificationFiles>
-                            <parallelTesting>false</parallelTesting>
-                            <checkBuildResult>true</checkBuildResult>
-
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
+   
 </project>
