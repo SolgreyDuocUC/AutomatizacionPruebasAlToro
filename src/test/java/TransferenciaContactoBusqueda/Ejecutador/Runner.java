@@ -5,21 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-        features = {
-                "./src/test/resources/features/contacto/ContactUs.feature",
-                "./src/test/resources/features/formularioBusqueda/Buscador.feature",
-                "./src/test/resources/features/TransferirFondos.feature"
-        },
-        glue = {"TransferenciaContactoBusqueda.steps"},
-        plugin = {
-                "pretty",
-                "json:target/cucumber.json",
-                "html:target/cucumber-reports/report.html",
-                "junit:target/cucumber-results.xml"
-        },
-        monochrome = true
-)
+@CucumberOptions(features={"./src/test/resources/features/TransferirFondos.feature"}, glue= {"steps"},
+        plugin = { "json:target/cucumber.json", "pretty","html:target/cucumber-reports/report.html",
+                "junit:target/cucumber-results.xml" },
+        monochrome = true)
+
 public class Runner {
 
 }
