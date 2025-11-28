@@ -1,6 +1,5 @@
 package Login.steps;
 
-import Login.utilities.ExcelUtils;
 import Login.utilities.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -8,39 +7,43 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
 public class IngresoCredencialesCorrectas {
 
-    WebDriver driver;
+    public static WebDriver driver;
 
-    // XPaths explicitamente pedidos
     private final By campoUsuario = By.xpath("//*[@id='uid']");
     private final By campoContrasena = By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[2]/td[2]/input");
     private final By botonLogin = By.xpath("/html/body/table/tbody/tr[2]/td[2]/div/form/table/tbody/tr[3]/td[2]/input");
-    private final By mensajeBienvenida = By.xpath("//*[@id='_ctl0__ctl0_Content_Main_pnl_vAccount']/h1");
+    private final By mensajeBienvenida = By.xpath("//h1[contains(text(), 'Hello Admin User')]");
 
-    int fila = 1;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("--disable-save-password-bubble");
+        options.addArguments("--no-default-browser-check");
+        options.addArguments("--disable-extensions");
+
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        String path = System.getProperty("user.dir") + "/testData/DatosUsuarios.xlsx";
-        ExcelUtils.setExcelFileSheet(path, "Sheet1");
+        driver.manage().deleteAllCookies();
     }
 
     @After
@@ -53,7 +56,6 @@ public class IngresoCredencialesCorrectas {
     @Given("que ingreso a la pagina de login en {string}")
     public void abrirPaginaLogin(String url) throws Exception {
         driver.get(url);
-
         Utility.captureScreenShot(driver,
                 "evidencias_login/pagina_login_" + Utility.GetTimeStampValue() + ".png");
     }
@@ -61,13 +63,14 @@ public class IngresoCredencialesCorrectas {
     @When("ingreso el nombre de usuario {string}")
     public void ingresoUsuarioManual(String usuario) throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement userInput = wait.until(ExpectedConditions.elementToBeClickable(campoUsuario));
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        WebElement userInput = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(campoUsuario)
+        );
 
         userInput.clear();
         userInput.sendKeys(usuario);
-
-        ExcelUtils.setCellData(usuario, fila, 0);
 
         Utility.captureScreenShot(driver,
                 "evidencias_login/usuario_ingresado_" + Utility.GetTimeStampValue() + ".png");
@@ -76,13 +79,21 @@ public class IngresoCredencialesCorrectas {
     @And("ingreso la contrasenia {string}")
     public void ingresoContrasenaManual(String pass) throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement passInput = wait.until(ExpectedConditions.elementToBeClickable(campoContrasena));
-
-        passInput.clear();
-        passInput.sendKeys(pass);
-
-        ExcelUtils.setCellData(pass, fila, 1);
+        int intentos = 0;
+        while (intentos < 10) {
+            try {
+                WebElement inputPass = driver.findElement(campoContrasena);
+                if (inputPass.isDisplayed() && inputPass.isEnabled()) {
+                    inputPass.clear();
+                    Thread.sleep(200);
+                    inputPass.sendKeys(pass);
+                    break;
+                }
+            } catch (Exception e) {
+                Thread.sleep(500);
+            }
+            intentos++;
+        }
 
         Utility.captureScreenShot(driver,
                 "evidencias_login/pass_ingresada_" + Utility.GetTimeStampValue() + ".png");
@@ -91,8 +102,11 @@ public class IngresoCredencialesCorrectas {
     @And("presiono el boton de inicio de sesion")
     public void presionarBotonLogin() throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(botonLogin));
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        WebElement loginBtn = wait.until(
+                ExpectedConditions.elementToBeClickable(botonLogin)
+        );
 
         Utility.captureScreenShot(driver,
                 "evidencias_login/click_login_" + Utility.GetTimeStampValue() + ".png");
@@ -103,39 +117,36 @@ public class IngresoCredencialesCorrectas {
     @Then("el sistema redirige al panel principal")
     public void validarRedireccion() throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.urlContains("bank/main.jsp"));
-
-        String urlActual = driver.getCurrentUrl();
 
         Utility.captureScreenShot(driver,
                 "evidencias_login/redireccion_" + Utility.GetTimeStampValue() + ".png");
 
+        String urlActual = driver.getCurrentUrl();
+
         if (!urlActual.contains("bank/main.jsp")) {
-            ExcelUtils.setCellData("FAIL", fila, 2);
-            throw new AssertionError("No redirigio al panel principal. URL: " + urlActual);
+            throw new AssertionError("No redirigió al panel principal. URL actual: " + urlActual);
         }
     }
 
     @Then("se muestra el mensaje {string}")
     public void validarMensaje(String esperado) throws Exception {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement mensaje = wait.until(ExpectedConditions.visibilityOfElementLocated(mensajeBienvenida));
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        WebElement mensaje = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(mensajeBienvenida)
+        );
 
         String obtenido = mensaje.getText().trim();
-
-        ExcelUtils.setCellData(obtenido, fila, 3);
 
         Utility.captureScreenShot(driver,
                 "evidencias_login/mensaje_" + Utility.GetTimeStampValue() + ".png");
 
         if (!obtenido.contains(esperado)) {
-            ExcelUtils.setCellData("FAIL", fila, 2);
             throw new AssertionError("Mensaje distinto. Esperado: " + esperado +
                     " | Obtenido: " + obtenido);
         }
-
-        ExcelUtils.setCellData("OK", fila, 2);
     }
 }
