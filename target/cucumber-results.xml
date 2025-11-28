@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="50.393">
+    <testcase classname="Realizar una búsqueda en la página" name="Búsqueda exitosa" time="7.394">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And el usuario oprime el panel de Search....................................passed
+When el usuario ingresa el valor "test" en el panel de Search...............passed
+And realiza la búsqueda.....................................................passed
+Then la página debería mostrar resultados relacionados con "test"...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Realizar una búsqueda en la página" name="Búsqueda fallida" time="5.645">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And el usuario oprime el panel de Search....................................passed
+When el usuario ingresa el valor "cadenaInexistente" en el panel de Search..passed
+And realiza la búsqueda.....................................................passed
+Then debería mostrarse un mensaje de respuesta no encontrado................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contactar con AltoroMutual a través del formulario Contact Us" name="Enviar formulario de contacto correctamente" time="6.4">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And que puedo acceder a la url "https://demo.testfire.net/".................passed
+When el usuario accede a la opción Contact Us...............................passed
+And el usuario abre el formulario de contacto...............................passed
+And el usuario ingresa el nombre de la fila "1".............................passed
+And el usuario ingresa el email de la fila "1"..............................passed
+And el usuario ingresa el propósito de la fila "1"..........................passed
+And el usuario ingresa los comentarios de la fila "1".......................passed
+And el usuario envía el formulario de contacto..............................passed
+Then debería mostrarse confirmación de envío exitoso para la fila "1".......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contactar con AltoroMutual a través del formulario Contact Us" name="Enviar formulario de contacto correctamente 2" time="6.38">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And que puedo acceder a la url "https://demo.testfire.net/".................passed
+When el usuario accede a la opción Contact Us...............................passed
+And el usuario abre el formulario de contacto...............................passed
+And el usuario ingresa el nombre de la fila "2".............................passed
+And el usuario ingresa el email de la fila "2"..............................passed
+And el usuario ingresa el propósito de la fila "2"..........................passed
+And el usuario ingresa los comentarios de la fila "2".......................passed
+And el usuario envía el formulario de contacto..............................passed
+Then debería mostrarse confirmación de envío exitoso para la fila "2".......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contactar con AltoroMutual a través del formulario Contact Us" name="Limpiar formulario de contacto" time="6.118">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And que puedo acceder a la url "https://demo.testfire.net/".................passed
+When el usuario accede a la opción Contact Us...............................passed
+And el usuario abre el formulario de contacto...............................passed
+And el usuario ingresa el nombre de la fila "1".............................passed
+And el usuario ingresa el email de la fila "1"..............................passed
+And el usuario ingresa el propósito de la fila "1"..........................passed
+And el usuario ingresa los comentarios de la fila "1".......................passed
+And el usuario limpia el formulario.........................................passed
+Then todos los campos deberían estar vacíos.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contactar con AltoroMutual a través del formulario Contact Us" name="Enviar formulario con campos inválidos" time="6.456">
+        <system-out><![CDATA[Given el navegador está abierto.............................................passed
+And que puedo acceder a la url "https://demo.testfire.net/".................passed
+When el usuario accede a la opción Contact Us...............................passed
+And el usuario abre el formulario de contacto...............................passed
+And el usuario ingresa el nombre de la fila "3".............................passed
+And el usuario ingresa el email de la fila "3"..............................passed
+And el usuario ingresa el propósito de la fila "3"..........................passed
+And el usuario ingresa los comentarios de la fila "3".......................passed
+And el usuario envía el formulario de contacto..............................passed
+Then deberían mostrarse mensajes de error por campos inválidos..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validar transferencia entre mis cuentas" name="Transferencia entre mis cuentas" time="3.71">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='LoginLink']/font&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51460}, goog:processID: 15548, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 99bbe0757c4480a43c644ddd84ce4488&#10;*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given que puedo acceder a la url "https://demo.testfire.net/"...............passed
+And puedo ingresar a mi aplicacion con mi usuario y mi password 1...........failed
+When doy click en el enlace de transferencia de fondos "Transfer Funds".....skipped
+And selecciono la cuenta de origen y destino 1..............................skipped
+And coloco el monto a transferir 1..........................................skipped
+And doy click en el boton de transferencia "//input[@id='transfer']"........skipped
+Then aparece el mensaje de transferencia correcta 1.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='LoginLink']/font"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51460}, goog:processID: 15548, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99bbe0757c4480a43c644ddd84ce4488
+*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)
+	at ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 1(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Validar transferencia entre mis cuentas" name="Transferencia entre mis cuentas 2" time="3.756">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='LoginLink']/font&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49998}, goog:processID: 17072, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e45ca31f5859eeec90e1617ff2acb5a3&#10;*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given que puedo acceder a la url "https://demo.testfire.net/"...............passed
+And puedo ingresar a mi aplicacion con mi usuario y mi password 2...........failed
+When doy click en el enlace de transferencia de fondos "Transfer Funds".....skipped
+And selecciono la cuenta de origen y destino 2..............................skipped
+And coloco el monto a transferir 2..........................................skipped
+And doy click en el boton de transferencia "//input[@id='transfer']"........skipped
+Then aparece el mensaje de transferencia correcta 2.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='LoginLink']/font"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49998}, goog:processID: 17072, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e45ca31f5859eeec90e1617ff2acb5a3
+*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)
+	at ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 2(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Validar transferencia entre mis cuentas" name="Transferencia entre mis cuentas 3" time="4.265">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='LoginLink']/font&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63844}, goog:processID: 2460, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1962ca7ebcf6d1cb69f1103785bf1f13&#10;*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given que puedo acceder a la url "https://demo.testfire.net/"...............passed
+And puedo ingresar a mi aplicacion con mi usuario y mi password 5...........failed
+When doy click en el enlace de transferencia de fondos "Transfer Funds".....skipped
+And selecciono la cuenta de origen y destino 5..............................skipped
+And coloco el monto a transferir 5..........................................skipped
+And doy click en el boton de transferencia "//input[@id='transfer']"........skipped
+Then aparece el mensaje de transferencia correcta 5.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='LoginLink']/font"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SOLGREY', ip: '192.168.1.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63844}, goog:processID: 2460, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1962ca7ebcf6d1cb69f1103785bf1f13
+*** Element info: {Using=xpath, value=//*[@id='LoginLink']/font}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)
+	at ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 5(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
