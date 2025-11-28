@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 383243600,
+              "duration": 416894600,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 4295007400,
+              "duration": 2970616600,
               "status": "passed"
             },
             "line": 5,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:03.622Z",
+        "start_timestamp": "2025-11-28T05:07:19.119Z",
         "before": [
           {
             "result": {
-              "duration": 1213966600,
+              "duration": 1152734000,
               "status": "passed"
             },
             "match": {
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 970546100,
+              "duration": 1070024900,
               "status": "passed"
             },
             "match": {
@@ -64,7 +64,7 @@
         "after": [
           {
             "result": {
-              "duration": 44981600,
+              "duration": 35823100,
               "status": "passed"
             },
             "match": {
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 124717900,
+              "duration": 174618400,
               "status": "passed"
             },
             "match": {
@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 90549000,
+              "duration": 90491400,
               "status": "passed"
             },
             "line": 8,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 209357500,
+              "duration": 240245500,
               "status": "passed"
             },
             "line": 9,
@@ -116,7 +116,7 @@
           },
           {
             "result": {
-              "duration": 13274400,
+              "duration": 6064700,
               "status": "passed"
             },
             "line": 10,
@@ -143,7 +143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 390044300,
+              "duration": 383128800,
               "status": "passed"
             },
             "line": 4,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 3399063300,
+              "duration": 3022365500,
               "status": "passed"
             },
             "line": 5,
@@ -168,11 +168,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:11.027Z",
+        "start_timestamp": "2025-11-28T05:07:25.344Z",
         "before": [
           {
             "result": {
-              "duration": 649151700,
+              "duration": 726740200,
               "status": "passed"
             },
             "match": {
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 684186400,
+              "duration": 695141800,
               "status": "passed"
             },
             "match": {
@@ -196,7 +196,7 @@
         "after": [
           {
             "result": {
-              "duration": 49862400,
+              "duration": 47878700,
               "status": "passed"
             },
             "match": {
@@ -205,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 125611700,
+              "duration": 111711800,
               "status": "passed"
             },
             "match": {
@@ -218,7 +218,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101446600,
+              "duration": 98807400,
               "status": "passed"
             },
             "line": 13,
@@ -236,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 53883900,
+              "duration": 199048400,
               "status": "passed"
             },
             "line": 14,
@@ -248,7 +248,7 @@
           },
           {
             "result": {
-              "duration": 188725500,
+              "duration": 28213900,
               "status": "passed"
             },
             "line": 15,
@@ -280,7 +280,7 @@
         "steps": [
           {
             "result": {
-              "duration": 382735600,
+              "duration": 377856200,
               "status": "passed"
             },
             "line": 5,
@@ -292,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 2009689500,
+              "duration": 1985299100,
               "status": "passed"
             },
             "line": 6,
@@ -311,11 +311,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:16.682Z",
+        "start_timestamp": "2025-11-28T05:07:30.667Z",
         "before": [
           {
             "result": {
-              "duration": 645191700,
+              "duration": 666670000,
               "status": "passed"
             },
             "match": {
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 678567900,
+              "duration": 681937900,
               "status": "passed"
             },
             "match": {
@@ -339,7 +339,7 @@
         "after": [
           {
             "result": {
-              "duration": 189426800,
+              "duration": 174635400,
               "status": "passed"
             },
             "match": {
@@ -348,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 127953700,
+              "duration": 109912700,
               "status": "passed"
             },
             "match": {
@@ -361,7 +361,7 @@
         "steps": [
           {
             "result": {
-              "duration": 528845100,
+              "duration": 568453400,
               "status": "passed"
             },
             "line": 9,
@@ -373,7 +373,7 @@
           },
           {
             "result": {
-              "duration": 335115600,
+              "duration": 349752100,
               "status": "passed"
             },
             "line": 10,
@@ -385,7 +385,7 @@
           },
           {
             "result": {
-              "duration": 239818800,
+              "duration": 228822000,
               "status": "passed"
             },
             "line": 11,
@@ -403,7 +403,7 @@
           },
           {
             "result": {
-              "duration": 197013700,
+              "duration": 208011300,
               "status": "passed"
             },
             "line": 12,
@@ -421,7 +421,7 @@
           },
           {
             "result": {
-              "duration": 220801200,
+              "duration": 221804800,
               "status": "passed"
             },
             "line": 13,
@@ -439,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 199483200,
+              "duration": 188757200,
               "status": "passed"
             },
             "line": 14,
@@ -457,7 +457,7 @@
           },
           {
             "result": {
-              "duration": 361553600,
+              "duration": 409875500,
               "status": "passed"
             },
             "line": 15,
@@ -469,7 +469,7 @@
           },
           {
             "result": {
-              "duration": 270671400,
+              "duration": 278322000,
               "status": "passed"
             },
             "line": 16,
@@ -496,7 +496,7 @@
         "steps": [
           {
             "result": {
-              "duration": 382901300,
+              "duration": 383580100,
               "status": "passed"
             },
             "line": 5,
@@ -508,7 +508,7 @@
           },
           {
             "result": {
-              "duration": 2026433100,
+              "duration": 2063532300,
               "status": "passed"
             },
             "line": 6,
@@ -527,11 +527,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:23.088Z",
+        "start_timestamp": "2025-11-28T05:07:37.132Z",
         "before": [
           {
             "result": {
-              "duration": 653672800,
+              "duration": 636896500,
               "status": "passed"
             },
             "match": {
@@ -540,7 +540,7 @@
           },
           {
             "result": {
-              "duration": 680847900,
+              "duration": 679729700,
               "status": "passed"
             },
             "match": {
@@ -555,7 +555,7 @@
         "after": [
           {
             "result": {
-              "duration": 160392500,
+              "duration": 174159800,
               "status": "passed"
             },
             "match": {
@@ -564,7 +564,7 @@
           },
           {
             "result": {
-              "duration": 110881200,
+              "duration": 111900400,
               "status": "passed"
             },
             "match": {
@@ -577,7 +577,7 @@
         "steps": [
           {
             "result": {
-              "duration": 589861000,
+              "duration": 509135000,
               "status": "passed"
             },
             "line": 9,
@@ -589,7 +589,7 @@
           },
           {
             "result": {
-              "duration": 340824200,
+              "duration": 336688300,
               "status": "passed"
             },
             "line": 10,
@@ -601,7 +601,7 @@
           },
           {
             "result": {
-              "duration": 219957600,
+              "duration": 235451500,
               "status": "passed"
             },
             "line": 11,
@@ -619,7 +619,7 @@
           },
           {
             "result": {
-              "duration": 196628400,
+              "duration": 194314500,
               "status": "passed"
             },
             "line": 12,
@@ -637,7 +637,7 @@
           },
           {
             "result": {
-              "duration": 201971400,
+              "duration": 189049900,
               "status": "passed"
             },
             "line": 13,
@@ -655,7 +655,7 @@
           },
           {
             "result": {
-              "duration": 204948800,
+              "duration": 204267700,
               "status": "passed"
             },
             "line": 14,
@@ -673,7 +673,7 @@
           },
           {
             "result": {
-              "duration": 348081000,
+              "duration": 392526800,
               "status": "passed"
             },
             "line": 15,
@@ -685,7 +685,7 @@
           },
           {
             "result": {
-              "duration": 258554500,
+              "duration": 275621000,
               "status": "passed"
             },
             "line": 16,
@@ -712,7 +712,7 @@
         "steps": [
           {
             "result": {
-              "duration": 395414700,
+              "duration": 392994300,
               "status": "passed"
             },
             "line": 5,
@@ -724,7 +724,7 @@
           },
           {
             "result": {
-              "duration": 1996445500,
+              "duration": 2012459000,
               "status": "passed"
             },
             "line": 6,
@@ -743,11 +743,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:29.474Z",
+        "start_timestamp": "2025-11-28T05:07:43.530Z",
         "before": [
           {
             "result": {
-              "duration": 636221000,
+              "duration": 635434600,
               "status": "passed"
             },
             "match": {
@@ -756,7 +756,7 @@
           },
           {
             "result": {
-              "duration": 665697700,
+              "duration": 682438400,
               "status": "passed"
             },
             "match": {
@@ -771,7 +771,7 @@
         "after": [
           {
             "result": {
-              "duration": 159433200,
+              "duration": 170516600,
               "status": "passed"
             },
             "match": {
@@ -780,7 +780,7 @@
           },
           {
             "result": {
-              "duration": 125265700,
+              "duration": 108904500,
               "status": "passed"
             },
             "match": {
@@ -793,7 +793,7 @@
         "steps": [
           {
             "result": {
-              "duration": 542673300,
+              "duration": 540008900,
               "status": "passed"
             },
             "line": 24,
@@ -805,7 +805,7 @@
           },
           {
             "result": {
-              "duration": 335205000,
+              "duration": 359669800,
               "status": "passed"
             },
             "line": 25,
@@ -817,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 221869600,
+              "duration": 232525000,
               "status": "passed"
             },
             "line": 26,
@@ -835,7 +835,7 @@
           },
           {
             "result": {
-              "duration": 203508100,
+              "duration": 193844700,
               "status": "passed"
             },
             "line": 27,
@@ -853,7 +853,7 @@
           },
           {
             "result": {
-              "duration": 193217600,
+              "duration": 189762200,
               "status": "passed"
             },
             "line": 28,
@@ -871,7 +871,7 @@
           },
           {
             "result": {
-              "duration": 205360100,
+              "duration": 191816200,
               "status": "passed"
             },
             "line": 29,
@@ -889,7 +889,7 @@
           },
           {
             "result": {
-              "duration": 186874600,
+              "duration": 188279800,
               "status": "passed"
             },
             "line": 30,
@@ -901,7 +901,7 @@
           },
           {
             "result": {
-              "duration": 247855000,
+              "duration": 242339700,
               "status": "passed"
             },
             "line": 31,
@@ -922,7 +922,7 @@
         "steps": [
           {
             "result": {
-              "duration": 394710800,
+              "duration": 397701700,
               "status": "passed"
             },
             "line": 5,
@@ -934,7 +934,7 @@
           },
           {
             "result": {
-              "duration": 2042420400,
+              "duration": 1998951100,
               "status": "passed"
             },
             "line": 6,
@@ -953,11 +953,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:35.598Z",
+        "start_timestamp": "2025-11-28T05:07:49.679Z",
         "before": [
           {
             "result": {
-              "duration": 655047300,
+              "duration": 642652500,
               "status": "passed"
             },
             "match": {
@@ -966,7 +966,7 @@
           },
           {
             "result": {
-              "duration": 707669700,
+              "duration": 676376700,
               "status": "passed"
             },
             "match": {
@@ -981,7 +981,7 @@
         "after": [
           {
             "result": {
-              "duration": 173601300,
+              "duration": 174777800,
               "status": "passed"
             },
             "match": {
@@ -990,7 +990,7 @@
           },
           {
             "result": {
-              "duration": 109026600,
+              "duration": 110441800,
               "status": "passed"
             },
             "match": {
@@ -1003,7 +1003,7 @@
         "steps": [
           {
             "result": {
-              "duration": 590769200,
+              "duration": 571483400,
               "status": "passed"
             },
             "line": 38,
@@ -1015,7 +1015,7 @@
           },
           {
             "result": {
-              "duration": 354384600,
+              "duration": 360396900,
               "status": "passed"
             },
             "line": 39,
@@ -1027,7 +1027,7 @@
           },
           {
             "result": {
-              "duration": 221730900,
+              "duration": 249705600,
               "status": "passed"
             },
             "line": 40,
@@ -1045,7 +1045,7 @@
           },
           {
             "result": {
-              "duration": 215666400,
+              "duration": 188971000,
               "status": "passed"
             },
             "line": 41,
@@ -1063,7 +1063,7 @@
           },
           {
             "result": {
-              "duration": 191415100,
+              "duration": 191281400,
               "status": "passed"
             },
             "line": 42,
@@ -1081,7 +1081,7 @@
           },
           {
             "result": {
-              "duration": 207129000,
+              "duration": 200785500,
               "status": "passed"
             },
             "line": 43,
@@ -1099,7 +1099,7 @@
           },
           {
             "result": {
-              "duration": 348930800,
+              "duration": 395959000,
               "status": "passed"
             },
             "line": 44,
@@ -1111,7 +1111,7 @@
           },
           {
             "result": {
-              "duration": 239628500,
+              "duration": 242981700,
               "status": "passed"
             },
             "line": 45,
@@ -1135,11 +1135,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2025-11-28T04:54:42.077Z",
+        "start_timestamp": "2025-11-28T05:07:56.109Z",
         "before": [
           {
             "result": {
-              "duration": 634826700,
+              "duration": 640128100,
               "status": "passed"
             },
             "match": {
@@ -1148,7 +1148,7 @@
           },
           {
             "result": {
-              "duration": 666610400,
+              "duration": 679552800,
               "status": "passed"
             },
             "match": {
@@ -1163,7 +1163,7 @@
         "after": [
           {
             "result": {
-              "duration": 171880900,
+              "duration": 161668300,
               "status": "passed"
             },
             "match": {
@@ -1172,7 +1172,7 @@
           },
           {
             "result": {
-              "duration": 110247500,
+              "duration": 111632400,
               "status": "passed"
             },
             "match": {
@@ -1185,7 +1185,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2090888100,
+              "duration": 2006719600,
               "status": "passed"
             },
             "line": 5,
@@ -1203,8 +1203,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51460}, goog:processID: 15548, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 99bbe0757c4480a43c644ddd84ce4488\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 1(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
-              "duration": 25691500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50322}, goog:processID: 3188, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 312013bc319edeef2ea31d7400fc5948\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 1(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
+              "duration": 32958300,
               "status": "failed"
             },
             "line": 6,
@@ -1284,11 +1284,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:45.801Z",
+        "start_timestamp": "2025-11-28T05:07:59.762Z",
         "before": [
           {
             "result": {
-              "duration": 642655600,
+              "duration": 643531600,
               "status": "passed"
             },
             "match": {
@@ -1297,7 +1297,7 @@
           },
           {
             "result": {
-              "duration": 660358800,
+              "duration": 654674900,
               "status": "passed"
             },
             "match": {
@@ -1312,7 +1312,7 @@
         "after": [
           {
             "result": {
-              "duration": 178708500,
+              "duration": 177175700,
               "status": "passed"
             },
             "match": {
@@ -1321,7 +1321,7 @@
           },
           {
             "result": {
-              "duration": 109756000,
+              "duration": 111221700,
               "status": "passed"
             },
             "match": {
@@ -1334,7 +1334,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2134439200,
+              "duration": 2123159600,
               "status": "passed"
             },
             "line": 5,
@@ -1352,8 +1352,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49998}, goog:processID: 17072, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e45ca31f5859eeec90e1617ff2acb5a3\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 2(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
-              "duration": 26721000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50971}, goog:processID: 10520, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: a56e3496ca1baf692e822e8fb78c894d\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 2(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
+              "duration": 13115400,
               "status": "failed"
             },
             "line": 6,
@@ -1433,11 +1433,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-11-28T04:54:49.566Z",
+        "start_timestamp": "2025-11-28T05:08:03.496Z",
         "before": [
           {
             "result": {
-              "duration": 651838900,
+              "duration": 654533800,
               "status": "passed"
             },
             "match": {
@@ -1446,7 +1446,7 @@
           },
           {
             "result": {
-              "duration": 666179100,
+              "duration": 655097800,
               "status": "passed"
             },
             "match": {
@@ -1461,7 +1461,7 @@
         "after": [
           {
             "result": {
-              "duration": 196998900,
+              "duration": 180595400,
               "status": "passed"
             },
             "match": {
@@ -1470,7 +1470,7 @@
           },
           {
             "result": {
-              "duration": 128356100,
+              "duration": 108710400,
               "status": "passed"
             },
             "match": {
@@ -1483,7 +1483,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2604409100,
+              "duration": 2055345400,
               "status": "passed"
             },
             "line": 5,
@@ -1501,8 +1501,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63844}, goog:processID: 2460, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 1962ca7ebcf6d1cb69f1103785bf1f13\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 5(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
-              "duration": 16124800,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027LoginLink\u0027]/font\"}\n  (Session info: chrome\u003d142.0.7444.176)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SOLGREY\u0027, ip: \u0027192.168.1.87\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /tmp/chrome-test-profile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62283}, goog:processID: 5804, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 3907d5f06aa731343649df2f62d799cf\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027LoginLink\u0027]/font}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.duoc.steps.TranferirFondosSteps.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(TranferirFondosSteps.java:56)\r\n\tat ✽.puedo ingresar a mi aplicacion con mi usuario y mi password 5(file:///C:/Users/GAMER/IdeaProjects/AutomatizacionPruebasAlToro/src/test/resources/Features/TransferirFondos.feature:6)\r\n",
+              "duration": 13459100,
               "status": "failed"
             },
             "line": 6,
@@ -1563,7 +1563,6 @@
           },
           {
             "result": {
-              "duration": 1509900,
               "status": "skipped"
             },
             "line": 10,
