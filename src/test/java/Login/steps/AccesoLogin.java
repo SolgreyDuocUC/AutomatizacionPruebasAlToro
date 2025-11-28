@@ -1,6 +1,5 @@
 package Login.steps;
 
-import Login.utilities.ExcelUtils;
 import Login.utilities.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -18,15 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AccesoLogin {
 
-    static WebDriver driver;
-
-    static {
-        try {
-            ExcelUtils.setExcelFileSheet("testData/Login.xlsx", "DatosUsuarios");
-        } catch (Exception e) {
-            throw new RuntimeException("No se pudo cargar el Excel", e);
-        }
-    }
+    WebDriver driver;
 
     @Before
     public void setUp() {
