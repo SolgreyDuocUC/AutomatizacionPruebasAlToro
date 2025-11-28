@@ -1,0 +1,490 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-11-28T02:29:43.447Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2064061400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Transferencia entre mis cuentas",
+        "description": "",
+        "id": "validar-transferencia-entre-mis-cuentas;transferencia-entre-mis-cuentas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 247270100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1782807900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que puedo acceder a la url \"https://demo.testfire.net/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://demo.testfire.net/\"",
+                  "offset": 27
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.que_puedo_acceder_a_la_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 814716700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "puedo ingresar a mi aplicacion con mi usuario y mi password 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 60
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 277393200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doy click en el enlace de transferencia de fondos \"Transfer Funds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transfer Funds\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_enlace_de_transferencia_de_fondos(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114711900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selecciono la cuenta de origen y destino 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 41
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.selecciono_la_cuenta_de_origen_y_destino(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81674600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "coloco el monto a transferir 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.coloco_el_monto_a_transferir(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4245139600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "doy click en el boton de transferencia \"//input[@id\u003d\u0027transfer\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@id\u003d\u0027transfer\u0027]\"",
+                  "offset": 39
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_boton_de_transferencia(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121448300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "aparece el mensaje de transferencia correcta 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.aparece_el_mensaje_de_transferencia_correcta(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-11-28T02:29:53.255Z",
+        "before": [
+          {
+            "result": {
+              "duration": 757144000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Transferencia entre mis cuentas",
+        "description": "",
+        "id": "validar-transferencia-entre-mis-cuentas;transferencia-entre-mis-cuentas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 214266000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1758951000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que puedo acceder a la url \"https://demo.testfire.net/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://demo.testfire.net/\"",
+                  "offset": 27
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.que_puedo_acceder_a_la_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 768915600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "puedo ingresar a mi aplicacion con mi usuario y mi password 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 60
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 248088800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doy click en el enlace de transferencia de fondos \"Transfer Funds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transfer Funds\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_enlace_de_transferencia_de_fondos(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101595900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selecciono la cuenta de origen y destino 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 41
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.selecciono_la_cuenta_de_origen_y_destino(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97611800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "coloco el monto a transferir 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.coloco_el_monto_a_transferir(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4258587900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "doy click en el boton de transferencia \"//input[@id\u003d\u0027transfer\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@id\u003d\u0027transfer\u0027]\"",
+                  "offset": 39
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_boton_de_transferencia(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50425400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "aparece el mensaje de transferencia correcta 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.aparece_el_mensaje_de_transferencia_correcta(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-11-28T02:30:01.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 683198100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Transferencia entre mis cuentas",
+        "description": "",
+        "id": "validar-transferencia-entre-mis-cuentas;transferencia-entre-mis-cuentas;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 205220700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.PasosTransferFondos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1270770900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que puedo acceder a la url \"https://demo.testfire.net/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://demo.testfire.net/\"",
+                  "offset": 27
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.que_puedo_acceder_a_la_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 725033000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "puedo ingresar a mi aplicacion con mi usuario y mi password 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 60
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279823400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doy click en el enlace de transferencia de fondos \"Transfer Funds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Transfer Funds\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_enlace_de_transferencia_de_fondos(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93410900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selecciono la cuenta de origen y destino 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 41
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.selecciono_la_cuenta_de_origen_y_destino(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87092100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "coloco el monto a transferir 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.coloco_el_monto_a_transferir(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4245144900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "doy click en el boton de transferencia \"//input[@id\u003d\u0027transfer\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@id\u003d\u0027transfer\u0027]\"",
+                  "offset": 39
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.doy_click_en_el_boton_de_transferencia(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50347400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "aparece el mensaje de transferencia correcta 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 45
+                }
+              ],
+              "location": "DefinicionPasos.PasosTransferFondos.aparece_el_mensaje_de_transferencia_correcta(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validar transferencia entre mis cuentas",
+    "description": "   Yo como usuario necesito hacer transferencias entre mis cuentas",
+    "id": "validar-transferencia-entre-mis-cuentas",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FeatureFondos.feature",
+    "tags": []
+  }
+]

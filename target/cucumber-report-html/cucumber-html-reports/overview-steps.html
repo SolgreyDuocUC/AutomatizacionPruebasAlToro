@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>TransferFondos</td>
+              <td>1</td>
+            <td>31 dic. 2023, 16:46</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.aparece_el_mensaje_de_transferencia_correcta(java.lang.Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="75944833">0.075</td>
+              <td class="duration" data-value="75944833">0.122</td>
+              <td class="duration" data-value="227834500">0.227</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.coloco_el_monto_a_transferir(java.lang.Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="67780133">0.067</td>
+              <td class="duration" data-value="67780133">0.069</td>
+              <td class="duration" data-value="203340400">0.203</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.doy_click_en_el_boton_de_transferencia(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="198456733">0.198</td>
+              <td class="duration" data-value="198456733">0.202</td>
+              <td class="duration" data-value="595370200">0.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.doy_click_en_el_enlace_de_transferencia_de_fondos(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="263138200">0.263</td>
+              <td class="duration" data-value="263138200">0.274</td>
+              <td class="duration" data-value="789414600">0.789</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.puedo_ingresar_a_mi_aplicacion_con_mi_usuario_y_mi_password(java.lang.Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="755022266">0.755</td>
+              <td class="duration" data-value="755022266">0.772</td>
+              <td class="duration" data-value="2265066800">2.265</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.que_puedo_acceder_a_la_url(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1241599500">1.241</td>
+              <td class="duration" data-value="1241599500">1.302</td>
+              <td class="duration" data-value="3724798500">3.724</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.selecciono_la_cuenta_de_origen_y_destino(java.lang.Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="79482366">0.079</td>
+              <td class="duration" data-value="79482366">0.084</td>
+              <td class="duration" data-value="238447100">0.238</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.setUp()</td>
+              <td>3</td>
+              <td class="duration" data-value="946699333">0.946</td>
+              <td class="duration" data-value="946699333">1.402</td>
+              <td class="duration" data-value="2840098000">2.840</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DefinicionPasos.PasosTransferFondos.tearDown()</td>
+              <td>3</td>
+              <td class="duration" data-value="147557700">0.147</td>
+              <td class="duration" data-value="147557700">0.169</td>
+              <td class="duration" data-value="442673100">0.442</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>9</td>
+            <td>27</td>
+            <td class="duration">0.419</td>
+            <td class="duration">3.724</td>
+            <td class="duration">11.327</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
