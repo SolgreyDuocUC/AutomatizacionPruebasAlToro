@@ -1,4 +1,4 @@
-package com.duoc.Utilidades;
+package com.duoc.utilidades;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

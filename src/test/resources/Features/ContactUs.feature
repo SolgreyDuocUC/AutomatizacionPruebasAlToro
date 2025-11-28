@@ -1,4 +1,3 @@
-@ContactUs
 Feature: Contactar con AltoroMutual a través del formulario Contact Us
   Yo como usuario necesito enviar consultas a través del formulario Contact Us
 
